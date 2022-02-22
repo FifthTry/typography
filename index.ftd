@@ -281,3 +281,23 @@ color: $neutral-700
 color if $fpm.dark-mode: $neutral-200
 padding-bottom: 8
 font: apple-system
+
+
+
+
+-- ftd.row key-value:
+caption key:
+optional string value:
+string default:
+margin-bottom: 10
+spacing: 2
+
+--- ftd.text: $key
+
+--- ftd.text: $value
+if: $value is not null
+
+--- ftd.text: $default
+if: $value is null
+
+
