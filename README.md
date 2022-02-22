@@ -1,4 +1,4 @@
 # typography
 
 
-A set of components for writing articles, like headings and markdown (for paragraphs).
+A set of [FPM components](https://fpm.dev) for writing articles, like headings and markdown (for paragraphs).
