@@ -1,2 +1,4 @@
-# fpm-book
-Template for book written as FPM Package
+# typography
+
+
+A set of components for writing articles, like headings and markdown (for paragraphs).
