@@ -1,11 +1,6 @@
 -- import: fpm
 
 
--- string neutral: #fff
--- string neutral-800: #0A1A1F
--- string neutral-700: #0A1A1F
--- string neutral-200: #EDEDED
-
 
 -- ftd.column h0:
 caption title:
@@ -20,15 +15,11 @@ append-at: inner
 text: $title
 caption $title:
 region: title
+role: $fpm.design.type.headline-large
 text: $title
-size: 46
-line-height: 46
-color: $neutral-800
-color if $fpm.dark-mode: $neutral
-style: bold
+color: $fpm.design.color.brand.on-region
 padding-bottom: 16
 padding-top: 8
-font: apple-system
 $on-click$ if $open: toggle $open
 
 --- ftd.column:
@@ -58,8 +49,7 @@ width: fill
 region: h1
 padding-left: 20
 border-left: 5
-border-color: rgba(250, 242, 220, 1)
-border-color if $fpm.dark-mode: rgb(17, 64, 74)
+border-color: $fpm.design.color.brand.on-secondary-action
 move-left: 25
 margin-bottom: 30
 $on-click$: toggle $open
@@ -72,21 +62,15 @@ spacing: 20
 caption $title:
 text: $title
 region: title
-size: 30
-line-height: 40
-color: $neutral-800
-color if $fpm.dark-mode: $neutral
-style: bold
+role: $fpm.design.type.headline-medium
+color: $fpm.design.color.brand.on-region
 padding-bottom: 8
-font: apple-system
 
 --- ftd.text: Click To Expand
 if: not $open
-color: $neutral
-color if $fpm.dark-mode: $neutral-800
-background-color: $neutral-700
-background-color if $fpm.dark-mode: $neutral
-size: 10
+role: $fpm.design.type.label-medium
+color: $fpm.design.color.brand.on-secondary-action
+background-color: $fpm.design.color.brand.secondary-action
 border-radius: 3
 padding: 3
 align: center
@@ -113,6 +97,9 @@ body: $body
 
 
 
+
+
+
 -- ftd.column h2:
 caption title:
 optional body body:
@@ -126,14 +113,10 @@ append-at: inner
 caption $title:
 text: $title
 region: title
-size: 26
-line-height: 32
-color: $neutral-800
-color if $fpm.dark-mode: $neutral
-style: bold
+role: $fpm.design.type.headline-small
+color: $fpm.design.color.brand.on-region
 padding-bottom: 8
 padding-top: 16
-font: apple-system
 $on-click$: toggle $open
 
 --- ftd.column:
@@ -144,6 +127,8 @@ width: fill
 --- markdown:
 if: $body is not null
 body: $body
+
+
 
 
 
@@ -165,14 +150,10 @@ append-at: inner
 caption $title:
 text: $title
 region: title
-size: 21
-line-height: 30
-color: $neutral-800
-color if $fpm.dark-mode: $neutral
-style: bold
+role: $fpm.design.type.headline-small
+color: $fpm.design.color.brand.on-region
 padding-bottom: 8
 padding-top: 16
-font: apple-system
 $on-click$: toggle $open
 
 --- ftd.column:
@@ -188,81 +169,6 @@ body: $body
 
 
 
-
-
-
-
-
--- ftd.column h4:
-caption title:
-optional body body:
-width: fill
-region: h4
-boolean open: true
-append-at: inner
-
---- ftd.text:
-caption $title:
-text: $title
-region: title
-size: 18
-line-height: 24
-color: $neutral-800
-color if $fpm.dark-mode: $neutral
-style: bold
-padding-bottom: 12
-padding-top: 34
-font: apple-system
-$on-click$: toggle $open
-
---- ftd.column:
-id: inner
-if: $open
-width: fill
-
---- markdown:
-if: $body is not null
-body: $body
-
-
-
-
-
-
-
-
-
-
--- ftd.column h5:
-caption title:
-optional body body:
-width: fill
-region: h5
-boolean open: true
-append-at: inner
-
---- ftd.text:
-caption $title:
-text: $title
-region: title
-size: 16
-line-height: 22
-color: $neutral-800
-color if $fpm.dark-mode: $neutral
-style: bold
-padding-bottom: 12
-padding-top: 34
-font: apple-system
-$on-click$: toggle $open
-
---- ftd.column:
-id: inner
-if: $open
-width: fill
-
---- markdown:
-if: $body is not null
-body: $body
 
 
 
@@ -275,12 +181,15 @@ optional boolean collapsed:
 optional caption title:
 optional boolean two_columns:
 text: $body
-size: 15
-line-height: 24
-color: $neutral-700
-color if $fpm.dark-mode: $neutral-200
+role: $fpm.design.type.body-large
+color: $fpm.design.color.brand.on-region
 padding-bottom: 8
-font: apple-system
+
+
+
+
+
+
 
 
 
@@ -301,3 +210,28 @@ if: $value is not null
 if: $value is null
 
 
+
+
+
+
+
+
+
+
+-- ftd.column h2-text:
+caption title:
+optional body body:
+width: fill
+region: h2
+padding-bottom: 12
+boolean open: true
+
+--- ftd.text:
+caption $title:
+text: $title
+region: title
+role: $fpm.design.type.headline-small
+color: $fpm.design.color.brand.on-region
+padding-bottom: 8
+padding-top: 16
+$on-click$: toggle $open
