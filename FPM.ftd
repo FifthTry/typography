@@ -3,3 +3,5 @@
 -- fpm.package: fifthtry.github.io/typography
 zip: github.com/fifthtry/typography/archive/refs/heads/main.zip
 
+-- fpm.dependency: fifthtry.github.io/package-doc
+
