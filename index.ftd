@@ -15,9 +15,9 @@ append-at: inner
 text: $title
 caption $title:
 region: title
-role: $fpm.design.type.headline-large
+role: $fpm.type.headline-large
 text: $title
-color: $fpm.design.color.brand.on-region
+color: $fpm.color.main.text
 padding-bottom: 16
 padding-top: 8
 $on-click$ if $open: toggle $open
@@ -49,7 +49,7 @@ width: fill
 region: h1
 padding-left: 20
 border-left: 5
-border-color: $fpm.design.color.brand.on-secondary-action
+border-color: $fpm.color.main.cta-secondary.text
 move-left: 25
 margin-bottom: 30
 $on-click$: toggle $open
@@ -62,15 +62,15 @@ spacing: 20
 caption $title:
 text: $title
 region: title
-role: $fpm.design.type.headline-medium
-color: $fpm.design.color.brand.on-region
+role: $fpm.type.headline-medium
+color: $fpm.color.main.text
 padding-bottom: 8
 
 --- ftd.text: Click To Expand
 if: not $open
-role: $fpm.design.type.label-medium
-color: $fpm.design.color.brand.on-secondary-action
-background-color: $fpm.design.color.brand.secondary-action
+role: $fpm.type.label-medium
+color: $fpm.color.main.cta-secondary.text
+background-color: $fpm.color.main.cta-secondary.base
 border-radius: 3
 padding: 3
 align: center
@@ -113,8 +113,8 @@ append-at: inner
 caption $title:
 text: $title
 region: title
-role: $fpm.design.type.headline-small
-color: $fpm.design.color.brand.on-region
+role: $fpm.type.headline-small
+color: $fpm.color.main.text
 padding-bottom: 8
 padding-top: 16
 $on-click$: toggle $open
@@ -150,8 +150,8 @@ append-at: inner
 caption $title:
 text: $title
 region: title
-role: $fpm.design.type.headline-small
-color: $fpm.design.color.brand.on-region
+role: $fpm.type.headline-small
+color: $fpm.color.main.text
 padding-bottom: 8
 padding-top: 16
 $on-click$: toggle $open
@@ -181,8 +181,8 @@ optional boolean collapsed:
 optional caption title:
 optional boolean two_columns:
 text: $body
-role: $fpm.design.type.body-large
-color: $fpm.design.color.brand.on-region
+role: $fpm.type.body-large
+color: $fpm.color.main.text
 padding-bottom: 8
 
 
@@ -230,8 +230,8 @@ boolean open: true
 caption $title:
 text: $title
 region: title
-role: $fpm.design.type.headline-small
-color: $fpm.design.color.brand.on-region
+role: $fpm.type.headline-small
+color: $fpm.color.main.text
 padding-bottom: 8
 padding-top: 16
 $on-click$: toggle $open
