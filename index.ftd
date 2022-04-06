@@ -1,4 +1,176 @@
 -- import: fpm
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/forest-theme as ft
+
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+-- ftd.column:
+width: fill
+padding-horizontal: 50
+padding-horizontal if $is-mobile: 20
+padding-bottom: 200
+
+-- pd.package: Typography
+name: fifthtry.github.io/typography
+
+This component can be used to add heading. It has various heading namely h0, h1 and h2.
+Somewhat similar to heading tag in html. The variation of the numbers (0, 1 and 2)
+directly relates to the relevance that the content has in the interface. The lower
+the number, more prominence, and the importance it will have. So it helps creating the
+hierarchy of information.
+
+
+
+-- ft.code: Add this to your FPM.ftd
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/typography
+
+
+
+-- pd.component: h2
+name: fifthtry.github.io/typography.h2
+
+This is used to add third-level heading in hierarchy of content.
+It expects a title in caption, optional string type data in body and
+afterwards add any number of components.
+
+
+-- pd.hidden-code: How to use
+
+\-- h2: Small Title
+
+<Some text here> // This is optional
+
+\-- <other-components>:
+
+
+
+-- pd.component: h1
+name: fifthtry.github.io/typography.h1
+
+This is used to add second-level heading in hierarchy of content i.e. the big title.
+It expects a title in caption, optional string type data in body and
+afterwards add any number of components.
+
+
+-- pd.hidden-code: How to use
+
+\-- h1: Big Title
+
+<Some text here> // This is optional
+
+\-- <other-components>:
+
+
+
+-- pd.component: h0
+name: fifthtry.github.io/typography.h0
+
+This is used to add the most prominent heading i.e. the hero title.
+It expects a title in caption, optional string type data in body and
+afterwards add any number of components.
+
+
+-- pd.hidden-code: How to use
+
+\-- h0: Hero Title
+
+<Some text here> // This is optional
+
+\-- <other-components>:
+
+
+
+-- pd.output: Basic usage example of Typography
+
+\-- h0: Hero Title
+
+Some text here in h0
+
+\-- ftd.text: Other component in h0
+
+\-- h1: Big Title 1
+
+Some text here in first h1
+
+\-- ftd.text: Other component in first h1
+
+\-- h2: Title
+
+Some text here in first h2
+
+\-- ftd.text: Other component in first h2
+
+\-- h2: Title
+
+Some text here in second h2
+
+\-- ftd.text: Other component in second h2
+
+\-- h1: Big Title
+
+Some text here in second h1
+
+\-- ftd.text: Other component in second h1
+
+\-- h2: Title
+
+Some text here in third h2
+
+\-- ftd.text: Other component in third h2
+
+
+-- h0: Hero Title
+
+Some text here in h0
+
+-- ftd.text: Other component in h0
+
+-- h1: Big Title 1
+
+Some text here in first h1
+
+-- ftd.text: Other component in first h1
+
+-- h2: Title 1
+
+Some text here in first h2
+
+-- ftd.text: Other component in first h2
+
+-- h2: Title 2
+
+Some text here in second h2
+
+-- ftd.text: Other component in second h2
+
+-- h1: Big Title 2
+
+Some text here in second h1
+
+-- ftd.text: Other component in second h1
+
+-- h2: Title 3
+
+Some text here in third h2
+
+-- ftd.text: Other component in third h2
+
+
+
+
+
+
+
+
+
+
 
 
 
