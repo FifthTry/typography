@@ -224,7 +224,7 @@ border-left: 5
 border-color: $fpm.color.main.cta-secondary.text
 move-left: 25
 margin-bottom: 30
-$on-click$: toggle $open
+/$on-click$: toggle $open
 
 --- ftd.row:
 width: fill
@@ -238,7 +238,7 @@ role: $fpm.type.headline-medium
 color: $fpm.color.main.text
 padding-bottom: 8
 
---- ftd.text: Click To Expand
+/--- ftd.text: Click To Expand
 if: not $open
 role: $fpm.type.label-medium
 color: $fpm.color.main.cta-secondary.text
@@ -255,7 +255,7 @@ move-up: 2
 id: inner
 if: $open
 width: fill
-$on-click$: stop-propagation
+/$on-click$: stop-propagation
 cursor: default
 spacing: 20
 
@@ -278,8 +278,8 @@ optional body body:
 width: fill
 region: h2
 padding-bottom: 12
-boolean open: true
 append-at: inner
+/boolean open: true
 
 --- ftd.text:
 caption $title:
@@ -289,11 +289,10 @@ role: $fpm.type.headline-small
 color: $fpm.color.main.text
 padding-bottom: 8
 padding-top: 16
-$on-click$: toggle $open
+/$on-click$: toggle $open
 
 --- ftd.column:
 id: inner
-if: $open
 width: fill
 
 --- markdown:
@@ -315,8 +314,8 @@ optional body body:
 width: fill
 region: h3
 padding-bottom: 12
-boolean open: true
 append-at: inner
+/boolean open: true
 
 --- ftd.text:
 caption $title:
@@ -326,11 +325,10 @@ role: $fpm.type.headline-small
 color: $fpm.color.main.text
 padding-bottom: 8
 padding-top: 16
-$on-click$: toggle $open
+/$on-click$: toggle $open
 
 --- ftd.column:
 id: inner
-if: $open
 width: fill
 
 
@@ -407,3 +405,4 @@ color: $fpm.color.main.text
 padding-bottom: 8
 padding-top: 16
 $on-click$: toggle $open
+
