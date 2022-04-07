@@ -220,11 +220,11 @@ append-at: inner
 width: fill
 region: h1
 padding-left: 20
-border-left: 5
-border-color: $fpm.color.main.cta-secondary.text
 move-left: 25
 margin-bottom: 30
 /$on-click$: toggle $open
+/border-left: 5
+/border-color: $fpm.color.main.cta-secondary.text
 
 --- ftd.row:
 width: fill
