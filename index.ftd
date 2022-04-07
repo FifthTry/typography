@@ -219,12 +219,12 @@ boolean open: true
 append-at: inner
 width: fill
 region: h1
-padding-left: 20
-move-left: 25
-margin-bottom: 30
+margin-bottom: 20
 /$on-click$: toggle $open
 /border-left: 5
 /border-color: $fpm.color.main.cta-secondary.text
+/move-left: 25
+/padding-left: 20
 
 --- ftd.row:
 width: fill
@@ -236,7 +236,7 @@ text: $title
 region: title
 role: $fpm.type.headline-medium
 color: $fpm.color.main.text
-padding-bottom: 8
+padding-bottom: 10
 
 /--- ftd.text: Click To Expand
 if: not $open
@@ -277,7 +277,7 @@ caption title:
 optional body body:
 width: fill
 region: h2
-padding-bottom: 12
+margin-bottom: 20
 append-at: inner
 /boolean open: true
 
@@ -287,7 +287,7 @@ text: $title
 region: title
 role: $fpm.type.headline-small
 color: $fpm.color.main.text
-padding-bottom: 8
+padding-bottom: 10
 padding-top: 16
 /$on-click$: toggle $open
 
@@ -313,7 +313,7 @@ caption title:
 optional body body:
 width: fill
 region: h3
-padding-bottom: 12
+margin-bottom: 20
 append-at: inner
 /boolean open: true
 
@@ -323,7 +323,7 @@ text: $title
 region: title
 role: $fpm.type.headline-small
 color: $fpm.color.main.text
-padding-bottom: 8
+padding-bottom: 10
 padding-top: 16
 /$on-click$: toggle $open
 
@@ -353,7 +353,7 @@ optional boolean two_columns:
 text: $body
 role: $fpm.type.body-large
 color: $fpm.color.main.text
-padding-bottom: 8
+padding-bottom: 10
 
 
 
@@ -393,7 +393,7 @@ caption title:
 optional body body:
 width: fill
 region: h2
-padding-bottom: 12
+margin-bottom: 20
 boolean open: true
 
 --- ftd.text:
