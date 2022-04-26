@@ -187,7 +187,7 @@ append-at: inner
 text: $title
 caption $title:
 region: title
-role: $fpm.type.headline-large
+role: $fpm.type.heading-large
 text: $title
 color: $fpm.color.main.text
 padding-bottom: 16
@@ -234,13 +234,13 @@ spacing: 20
 caption $title:
 text: $title
 region: title
-role: $fpm.type.headline-medium
+role: $fpm.type.heading-medium
 color: $fpm.color.main.text
 padding-bottom: 10
 
 /--- ftd.text: Click To Expand
 if: not $open
-role: $fpm.type.label-medium
+role: $fpm.type.label-small
 color: $fpm.color.main.cta-secondary.text
 background-color: $fpm.color.main.cta-secondary.base
 border-radius: 3
@@ -285,7 +285,7 @@ append-at: inner
 caption $title:
 text: $title
 region: title
-role: $fpm.type.headline-small
+role: $fpm.type.heading-small
 color: $fpm.color.main.text
 padding-bottom: 10
 padding-top: 16
@@ -321,7 +321,7 @@ append-at: inner
 caption $title:
 text: $title
 region: title
-role: $fpm.type.headline-small
+role: $fpm.type.heading-small
 color: $fpm.color.main.text
 padding-bottom: 10
 padding-top: 16
@@ -351,7 +351,7 @@ optional boolean collapsed:
 optional caption title:
 optional boolean two_columns:
 text: $body
-role: $fpm.type.body-large
+role: $fpm.type.copy-large
 color: $fpm.color.main.text
 padding-bottom: 10
 
@@ -400,7 +400,7 @@ boolean open: true
 caption $title:
 text: $title
 region: title
-role: $fpm.type.headline-small
+role: $fpm.type.heading-small
 color: $fpm.color.main.text
 padding-bottom: 8
 padding-top: 16
