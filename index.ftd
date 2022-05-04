@@ -14,6 +14,8 @@ width: fill
 padding-horizontal: 50
 padding-horizontal if $is-mobile: 20
 padding-bottom: 200
+background-color: $fpm.color.main.background.base
+
 
 -- pd.package: Typography
 name: fifthtry.github.io/typography
@@ -43,9 +45,9 @@ afterwards add any number of components.
 
 -- pd.hidden-code: How to use
 
-\-- h2: Small Title
+\-- h2: Heading Medium
 
-<Some text here> // This is optional
+<Body text here> // This is optional
 
 \-- <other-components>:
 
@@ -61,9 +63,9 @@ afterwards add any number of components.
 
 -- pd.hidden-code: How to use
 
-\-- h1: Big Title
+\-- h1: Heading Large
 
-<Some text here> // This is optional
+<Body text here> // This is optional
 
 \-- <other-components>:
 
@@ -72,16 +74,16 @@ afterwards add any number of components.
 -- pd.component: h0
 name: fifthtry.github.io/typography.h0
 
-This is used to add the most prominent heading i.e. the hero title.
+This is used to add the most prominent heading i.e. the Heading Hero.
 It expects a title in caption, optional string type data in body and
 afterwards add any number of components.
 
 
 -- pd.hidden-code: How to use
 
-\-- h0: Hero Title
+\-- h0: Heading Hero
 
-<Some text here> // This is optional
+<Body text here> // This is optional
 
 \-- <other-components>:
 
@@ -89,78 +91,54 @@ afterwards add any number of components.
 
 -- pd.output: Basic usage example of Typography
 
-\-- h0: Hero Title
+\-- h0: Heading Hero
 
-Some text here in h0
-
-\-- ftd.text: Other component in h0
-
-\-- h1: Big Title 1
-
-Some text here in first h1
-
-\-- ftd.text: Other component in first h1
-
-\-- h2: Title
-
-Some text here in first h2
-
-\-- ftd.text: Other component in first h2
-
-\-- h2: Title
-
-Some text here in second h2
-
-\-- ftd.text: Other component in second h2
-
-\-- h1: Big Title
-
-Some text here in second h1
-
-\-- ftd.text: Other component in second h1
-
-\-- h2: Title
-
-Some text here in third h2
-
-\-- ftd.text: Other component in third h2
+Body text here in h0
 
 
--- h0: Hero Title
+\-- h1: Heading Large
 
-Some text here in h0
+Body text here in h1
 
--- ftd.text: Other component in h0
 
--- h1: Big Title 1
+\-- h2: Heading Medium
 
-Some text here in first h1
+Body text here in h2
 
--- ftd.text: Other component in first h1
 
--- h2: Title 1
+\-- h3: Heading Small
 
-Some text here in first h2
+Body text here in h3
 
--- ftd.text: Other component in first h2
 
--- h2: Title 2
 
-Some text here in second h2
 
--- ftd.text: Other component in second h2
 
--- h1: Big Title 2
 
-Some text here in second h1
+-- h0: Heading Hero
 
--- ftd.text: Other component in second h1
+Body text is here in h0
 
--- h2: Title 3
 
-Some text here in third h2
 
--- ftd.text: Other component in third h2
+-- h1: Heading Large
+
+Body text is here in h1
+
+
+
+-- h2: Heading Medium
+
+Body text is here in h2
+
+
+
+-- h3: Heading Small
+
+Body text is here in h3
+
+
+
 
 
 
@@ -187,9 +165,9 @@ append-at: inner
 text: $title
 caption $title:
 region: title
-role: $fpm.type.heading-large
+role: $fpm.type.heading-hero
 text: $title
-color: $fpm.color.main.text
+color: $fpm.color.main.text-strong
 padding-bottom: 16
 padding-top: 8
 $on-click$ if $open: toggle $open
@@ -222,7 +200,6 @@ region: h1
 margin-bottom: 20
 /$on-click$: toggle $open
 /border-left: 5
-/border-color: $fpm.color.main.cta-secondary.text
 /move-left: 25
 /padding-left: 20
 
@@ -234,9 +211,10 @@ spacing: 20
 caption $title:
 text: $title
 region: title
-role: $fpm.type.heading-medium
-color: $fpm.color.main.text
+role: $fpm.type.heading-large
+color: $fpm.color.main.text-strong
 padding-bottom: 10
+padding-top: 16
 
 /--- ftd.text: Click To Expand
 if: not $open
@@ -285,10 +263,9 @@ append-at: inner
 caption $title:
 text: $title
 region: title
-role: $fpm.type.heading-small
-color: $fpm.color.main.text
+role: $fpm.type.heading-medium
+color: $fpm.color.main.text-strong
 padding-bottom: 10
-padding-top: 16
 /$on-click$: toggle $open
 
 --- ftd.column:
@@ -322,7 +299,7 @@ caption $title:
 text: $title
 region: title
 role: $fpm.type.heading-small
-color: $fpm.color.main.text
+color: $fpm.color.main.text-strong
 padding-bottom: 10
 padding-top: 16
 /$on-click$: toggle $open
@@ -351,7 +328,7 @@ optional boolean collapsed:
 optional caption title:
 optional boolean two_columns:
 text: $body
-role: $fpm.type.copy-large
+role: $fpm.type.copy-relaxed
 color: $fpm.color.main.text
 padding-bottom: 10
 
