@@ -328,7 +328,7 @@ optional boolean collapsed:
 optional caption title:
 optional boolean two_columns:
 text: $body
-role: $fpm.type.copy-relaxed
+role: $fpm.type.label-big
 color: $fpm.color.main.text
 padding-bottom: 10
 
