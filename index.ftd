@@ -157,10 +157,10 @@ caption title:
 optional body body:
 width: fill
 region: h0
-padding-bottom: 16
 append-at: inner
 margin-top: 0
-margin-bottom: 0
+margin-bottom: 26
+
 
 --- ftd.text:
 caption $title:
@@ -175,6 +175,7 @@ $on-click$ if $open: toggle $open
 --- ftd.column:
 id: inner
 width: fill
+margin-bottom if $body is not null: -26
 
 --- markdown:
 if: $body is not null
@@ -195,9 +196,9 @@ optional body body:
 append-at: inner
 width: fill
 region: h1
-padding-bottom: 16
 margin-top: 0
 margin-bottom: 0
+margin-bottom if $body is null: 26
 
 --- ftd.row:
 width: fill
@@ -217,6 +218,7 @@ padding-top: 8
 --- ftd.column:
 id: inner
 width: fill
+margin-bottom if $body is not null: -26
 
 --- markdown:
 if: $body is not null
@@ -237,9 +239,9 @@ optional body body:
 width: fill
 region: h2
 append-at: inner
-padding-bottom: 16
 margin-top: 0
 margin-bottom: 0
+margin-bottom if $body is null: 26
 
 --- ftd.text:
 caption $title:
@@ -253,6 +255,7 @@ padding-top: 8
 --- ftd.column:
 id: inner
 width: fill
+margin-bottom if $body is not null: -26
 
 --- markdown:
 if: $body is not null
@@ -272,10 +275,10 @@ caption title:
 optional body body:
 width: fill
 region: h3
-padding-bottom: 16
+append-at: inner
 margin-top: 0
 margin-bottom: 0
-append-at: inner
+margin-bottom if $body is null: 26
 
 --- ftd.text:
 caption $title:
@@ -289,7 +292,7 @@ padding-top: 8
 --- ftd.column:
 id: inner
 width: fill
-
+margin-bottom if $body is not null: -26
 
 --- markdown:
 if: $body is not null
@@ -312,8 +315,7 @@ optional boolean two_columns:
 text: $body
 role: $fpm.type.copy-relaxed
 color: $fpm.color.main.text
-margin-bottom: 10
-
+margin-bottom: 26
 
 
 
