@@ -157,9 +157,10 @@ caption title:
 optional body body:
 width: fill
 region: h0
-padding-bottom: 12
-boolean open: true
+padding-bottom: 16
 append-at: inner
+margin-top: 0
+margin-bottom: 0
 
 --- ftd.text:
 caption $title:
@@ -173,7 +174,6 @@ $on-click$ if $open: toggle $open
 
 --- ftd.column:
 id: inner
-if: $open
 width: fill
 
 --- markdown:
@@ -192,15 +192,12 @@ body: $body
 -- ftd.column h1:
 caption title:
 optional body body:
-boolean open: true
 append-at: inner
 width: fill
 region: h1
-margin-bottom: 20
-/$on-click$: toggle $open
-/border-left: 5
-/move-left: 25
-/padding-left: 20
+padding-bottom: 16
+margin-top: 0
+margin-bottom: 0
 
 --- ftd.row:
 width: fill
@@ -212,29 +209,14 @@ text: $title
 region: title
 role: $fpm.type.heading-large
 color: $fpm.color.main.text-strong
-padding-bottom: 10
-padding-top: 16
-
-/--- ftd.text: Click To Expand
-if: not $open
-role: $fpm.type.label-small
-color: $fpm.color.main.cta-secondary.text
-background-color: $fpm.color.main.cta-secondary.base
-border-radius: 3
-padding: 3
-align: center
-text-align: center
-move-up: 2
+padding-bottom: 16
+padding-top: 8
 
 --- container: ftd.main
 
 --- ftd.column:
 id: inner
-if: $open
 width: fill
-/$on-click$: stop-propagation
-cursor: default
-spacing: 20
 
 --- markdown:
 if: $body is not null
@@ -254,9 +236,10 @@ caption title:
 optional body body:
 width: fill
 region: h2
-margin-bottom: 20
 append-at: inner
-/boolean open: true
+padding-bottom: 16
+margin-top: 0
+margin-bottom: 0
 
 --- ftd.text:
 caption $title:
@@ -264,8 +247,8 @@ text: $title
 region: title
 role: $fpm.type.heading-medium
 color: $fpm.color.main.text-strong
-padding-bottom: 10
-/$on-click$: toggle $open
+padding-bottom: 16
+padding-top: 8
 
 --- ftd.column:
 id: inner
@@ -289,9 +272,10 @@ caption title:
 optional body body:
 width: fill
 region: h3
-margin-bottom: 20
+padding-bottom: 16
+margin-top: 0
+margin-bottom: 0
 append-at: inner
-/boolean open: true
 
 --- ftd.text:
 caption $title:
@@ -299,9 +283,8 @@ text: $title
 region: title
 role: $fpm.type.heading-small
 color: $fpm.color.main.text-strong
-padding-bottom: 10
-padding-top: 16
-/$on-click$: toggle $open
+padding-bottom: 16
+padding-top: 8
 
 --- ftd.column:
 id: inner
@@ -329,7 +312,7 @@ optional boolean two_columns:
 text: $body
 role: $fpm.type.copy-relaxed
 color: $fpm.color.main.text
-padding-bottom: 10
+margin-bottom: 10
 
 
 
