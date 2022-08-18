@@ -197,8 +197,7 @@ append-at: inner
 width: fill
 region: h1
 margin-top: 0
-margin-bottom: 0
-margin-bottom if $body is null: 26
+margin-bottom: 26
 
 --- ftd.row:
 width: fill
@@ -240,8 +239,7 @@ width: fill
 region: h2
 append-at: inner
 margin-top: 0
-margin-bottom: 0
-margin-bottom if $body is null: 26
+margin-bottom: 26
 
 --- ftd.text:
 caption $title:
@@ -277,8 +275,7 @@ width: fill
 region: h3
 append-at: inner
 margin-top: 0
-margin-bottom: 0
-margin-bottom if $body is null: 26
+margin-bottom: 26
 
 --- ftd.text:
 caption $title:
