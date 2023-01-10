@@ -373,7 +373,7 @@ caption title:
 optional body body:
 
 -- ftd.column:
-width: fill-component
+width: fill-container
 region: h2
 margin-top.px: 32
 margin-bottom.px: 16
