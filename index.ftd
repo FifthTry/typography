@@ -8,10 +8,49 @@
 
 -- ftd.column:
 width: fill-container
-padding-horizontal.px: 50
-padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-horizontal: $ph
 padding-bottom.px: 200
 background.solid: $inherited.colors.background.base
+
+
+-- h1: Heading Hero
+
+Body text is here in h1
+
+
+
+-- h2: Heading Large
+
+Body text is here in h2
+
+
+
+-- h3: Heading Medium
+
+Body text is here in h3
+
+
+
+-- h4: Heading Small
+
+Body text is here in h4
+
+
+
+-- end: ftd.column
+
+
+
+
+
+
+
+
+
+
+-- ftd.length.responsive ph:
+desktop.px: 50
+mobile.px: 20
 
 
 
@@ -108,94 +147,6 @@ Body text here in h3
 
 
 
--- h0: Heading Hero
-
-Body text is here in h0
-
-
-
-
-
--- h1: Heading Large
-
-Body text is here in h1
-
-
-
-
-
--- h2: Heading Medium
-
-Body text is here in h2
-
-
-
-
-
--- h3: Heading Small
-
-Body text is here in h3
-
--- end: ftd.column
-
-
-
-
-
-
-
-
-
-
--- component h0:
-caption title:
-optional body body:
-
--- ftd.column:
-width: fill-container
-region: h1
-;;append-at: inner -- TODO FTD 0.3
-margin-top.px: 32
-margin-bottom.px: 16
-
--- ftd.text: $h0.title
-role: $inherited.types.heading-hero
-color: $inherited.colors.text-strong
-padding-bottom.px: 16
-padding-top.px: 8
-
--- ftd.column:
-width: fill-container
-margin-bottom.px if {h0.body != NULL}: -26
-
--- markdown:
-if: {h0.body != NULL}
-body: $h0.body
-
-
-
-
-
--- markdown:
-
-This is markdown body.
-
-
--- h2: Heading after markdown
-
-Heading body after markdown block.
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: h0
-
-
-
-
-
-
 
 
 
@@ -206,31 +157,24 @@ caption title:
 optional body body:
 
 -- ftd.column:
-;;append-at: inner -- TODO FTD 0.3
 width: fill-container
 region: h1
+;;append-at: inner -- TODO FTD 0.3
 margin-top.px: 32
 margin-bottom.px: 16
 
--- ftd.row:
-width: fill-container
-spacing.px: 20
-
 -- ftd.text: $h1.title
-role: $inherited.types.heading-large
+role: $inherited.types.heading-hero
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
 
--- end: ftd.row
-
 -- ftd.column:
-;;id: inner -- TODO FTD 0.3
 width: fill-container
-margin-bottom.px if {$h1.body != NULL}: -26
+margin-bottom.px if { h1.body != NULL }: -26
 
 -- markdown:
-if: {$h1.body != NULL}
+if: { h1.body != NULL }
 body: $h1.body
 
 -- end: ftd.column
@@ -253,17 +197,23 @@ caption title:
 optional body body:
 
 -- ftd.column:
+;;append-at: inner -- TODO FTD 0.3
 width: fill-container
 region: h2
-;;append-at: inner -- TODO FTD 0.3
 margin-top.px: 32
 margin-bottom.px: 16
 
+-- ftd.row:
+width: fill-container
+spacing.px: 20
+
 -- ftd.text: $h2.title
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
+
+-- end: ftd.row
 
 -- ftd.column:
 ;;id: inner -- TODO FTD 0.3
@@ -301,7 +251,7 @@ margin-top.px: 32
 margin-bottom.px: 16
 
 -- ftd.text: $h3.title
-role: $inherited.types.heading-small
+role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
@@ -320,6 +270,47 @@ body: $h3.body
 -- end: ftd.column
 
 -- end: h3
+
+
+
+
+
+
+
+
+
+
+-- component h4:
+caption title:
+optional body body:
+
+-- ftd.column:
+width: fill-container
+region: h4
+;;append-at: inner -- TODO FTD 0.3
+margin-top.px: 32
+margin-bottom.px: 16
+
+-- ftd.text: $h4.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+padding-bottom.px: 16
+padding-top.px: 8
+
+-- ftd.column:
+;;id: inner -- TODO FTD 0.3
+width: fill-container
+margin-bottom.px if {$h4.body != NULL}: -26
+
+-- markdown:
+if: {$h4.body != NULL}
+body: $h4.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: h4
 
 
 
