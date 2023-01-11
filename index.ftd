@@ -136,7 +136,21 @@ Body text is here in h3
 
 Body text is here in h4
 
+
+
+
+
+-- markdown:
+
+This is markdown body.
+
+
+-- h2: Heading after markdown
+
+Heading body after markdown block.
+
 -- end: ftd.column
+
 
 
 
