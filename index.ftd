@@ -223,7 +223,7 @@ width: fill-container
 margin-bottom.px if {$h2.body != NULL}: -26
 
 -- markdown:
-if: {$h2.body != NULL}
+if: { h2.body != NULL}
 body: $h2.body
 
 -- end: ftd.column
@@ -264,7 +264,7 @@ width: fill-container
 margin-bottom.px if {$h3.body != NULL}: -26
 
 -- markdown:
-if: {$h3.body != NULL}
+if: { h3.body != NULL}
 body: $h3.body
 
 -- end: ftd.column
@@ -305,7 +305,7 @@ width: fill-container
 margin-bottom.px if {$h4.body != NULL}: -26
 
 -- markdown:
-if: {$h4.body != NULL}
+if: { h4.body != NULL}
 body: $h4.body
 
 -- end: ftd.column
@@ -357,10 +357,10 @@ spacing.px: 2
 -- ftd.text: $key-value.key
 
 -- ftd.text: $key-value.value
-if: {$key-value.value != NULL}
+if: { key-value.value != NULL}
 
 -- ftd.text: $key-value.default
-if: {$key-value.value = NULL}
+if: { key-value.value = NULL}
 
 -- end: ftd.row
 
