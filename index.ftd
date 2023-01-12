@@ -1,6 +1,6 @@
 -- import: fpm
-;;-- import: fifthtry.github.io/package-doc/doc as pd
-;;-- import: fifthtry.github.io/package-doc/forest-theme as ft
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/forest-theme as ft
 
 
 
@@ -35,7 +35,9 @@ Body text is here in h3
 
 Body text is here in h4
 
+-- markdown: 
 
+This is body
 
 -- end: ftd.column
 
