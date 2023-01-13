@@ -19,19 +19,19 @@ Body text is here in h1
 
 
 
--- h2: Heading Large
+-- h1: Heading Large
 
 Body text is here in h2
 
 
 
--- h3: Heading Medium
+-- h2: Heading Medium
 
 Body text is here in h3
 
 
 
--- h4: Heading Small
+-- h3: Heading Small
 
 Body text is here in h4
 
@@ -154,6 +154,46 @@ Body text here in h3
 
 
 
+-- component h0:
+caption title:
+optional body body:
+
+-- ftd.column:
+width: fill-container
+region: h1
+;;append-at: inner -- TODO FTD 0.3
+margin-top.px: 32
+margin-bottom.px: 16
+
+-- ftd.text: $h0.title
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+padding-bottom.px: 16
+padding-top.px: 8
+
+-- ftd.column:
+width: fill-container
+margin-bottom.px if { h0.body != NULL }: -26
+
+-- markdown:
+if: { h0.body != NULL }
+body: $h0.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: h1
+
+
+
+
+
+
+
+
+
+
 -- component h1:
 caption title:
 optional body body:
@@ -166,7 +206,7 @@ margin-top.px: 32
 margin-bottom.px: 16
 
 -- ftd.text: $h1.title
-role: $inherited.types.heading-hero
+role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
@@ -210,7 +250,7 @@ width: fill-container
 spacing.px: 20
 
 -- ftd.text: $h2.title
-role: $inherited.types.heading-large
+role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
@@ -253,7 +293,7 @@ margin-top.px: 32
 margin-bottom.px: 16
 
 -- ftd.text: $h3.title
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
