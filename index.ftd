@@ -153,7 +153,6 @@ Body text here in h3
 
 
 
-
 -- component h0:
 caption title:
 optional body body:
@@ -173,7 +172,7 @@ padding-top.px: 8
 
 -- ftd.column:
 width: fill-container
-margin-bottom.px if { h0.body != NULL }: -26
+margin-bottom.px if {h0.body != NULL}: -26
 
 -- markdown:
 if: { h0.body != NULL }
@@ -194,16 +193,21 @@ body: $h0.body
 
 
 
+
 -- component h1:
 caption title:
 optional body body:
 
 -- ftd.column:
+;;append-at: inner -- TODO FTD 0.3
 width: fill-container
 region: h1
-;;append-at: inner -- TODO FTD 0.3
 margin-top.px: 32
 margin-bottom.px: 16
+
+-- ftd.row:
+width: fill-container
+spacing.px: 20
 
 -- ftd.text: $h1.title
 role: $inherited.types.heading-large
@@ -211,9 +215,12 @@ color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
 
+-- end: ftd.row
+
 -- ftd.column:
+;;id: inner -- TODO FTD 0.3
 width: fill-container
-margin-bottom.px if { h1.body != NULL }: -26
+margin-bottom.px if {$h1.body != NULL}: -26
 
 -- markdown:
 if: { h1.body != NULL }
@@ -239,15 +246,11 @@ caption title:
 optional body body:
 
 -- ftd.column:
-;;append-at: inner -- TODO FTD 0.3
 width: fill-container
 region: h2
+;;append-at: inner -- TODO FTD 0.3
 margin-top.px: 32
 margin-bottom.px: 16
-
--- ftd.row:
-width: fill-container
-spacing.px: 20
 
 -- ftd.text: $h2.title
 role: $inherited.types.heading-medium
@@ -255,15 +258,13 @@ color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
 
--- end: ftd.row
-
 -- ftd.column:
 ;;id: inner -- TODO FTD 0.3
 width: fill-container
 margin-bottom.px if {$h2.body != NULL}: -26
 
 -- markdown:
-if: { h2.body != NULL}
+if: { h2.body != NULL }
 body: $h2.body
 
 -- end: ftd.column
@@ -304,7 +305,7 @@ width: fill-container
 margin-bottom.px if {$h3.body != NULL}: -26
 
 -- markdown:
-if: { h3.body != NULL}
+if: { h3.body != NULL }
 body: $h3.body
 
 -- end: ftd.column
@@ -322,54 +323,14 @@ body: $h3.body
 
 
 
--- component h4:
-caption title:
-optional body body:
-
--- ftd.column:
-width: fill-container
-region: h4
-;;append-at: inner -- TODO FTD 0.3
-margin-top.px: 32
-margin-bottom.px: 16
-
--- ftd.text: $h4.title
-role: $inherited.types.heading-small
-color: $inherited.colors.text-strong
-padding-bottom.px: 16
-padding-top.px: 8
-
--- ftd.column:
-;;id: inner -- TODO FTD 0.3
-width: fill-container
-margin-bottom.px if {$h4.body != NULL}: -26
-
--- markdown:
-if: { h4.body != NULL}
-body: $h4.body
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: h4
-
-
-
-
-
-
-
-
-
-
 -- component markdown:
 body body:
 optional boolean collapsed:
 optional caption title:
 optional boolean two_columns:
 
--- ftd.text: $markdown.body
+-- ftd.text: 
+text: $markdown.body
 role: $inherited.types.copy-relaxed
 color: $inherited.colors.text
 margin-bottom.px: 26
@@ -397,10 +358,10 @@ spacing.px: 2
 -- ftd.text: $key-value.key
 
 -- ftd.text: $key-value.value
-if: { key-value.value != NULL}
+if: {$key-value.value != NULL}
 
 -- ftd.text: $key-value.default
-if: { key-value.value = NULL}
+if: {$key-value.value = NULL}
 
 -- end: ftd.row
 
