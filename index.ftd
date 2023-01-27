@@ -207,7 +207,7 @@ margin-bottom.px: 16
 
 -- ftd.row:
 width: fill-container
-spacing.px: 20
+spacing.fixed.px: 20
 
 -- ftd.text: $h1.title
 role: $inherited.types.heading-large
@@ -353,7 +353,7 @@ string default:
 
 -- ftd.row:
 margin-bottom.px: 10
-spacing.px: 2
+spacing.fixed.px: 2
 
 -- ftd.text: $key-value.key
 
