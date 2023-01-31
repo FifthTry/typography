@@ -1,4 +1,4 @@
--- import: fastn
+-- import: fpm
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
@@ -63,10 +63,10 @@ This component can be used to add heading. It has various heading namely h0, h1 
 
 
 
-/-- ft.code: Add this to your FASTN.ftd
+/-- ft.code: Add this to your FPM.ftd
 lang: ftd
 
-/-- fastn.dependency: fifthtry.github.io/typography
+/-- fpm.dependency: fifthtry.github.io/typography
 
 
 /-- pd.component: h2
