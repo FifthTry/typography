@@ -331,7 +331,7 @@ optional boolean two_columns:
 
 -- ftd.text: 
 text: $markdown.body
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 margin-bottom.px: 26
 
