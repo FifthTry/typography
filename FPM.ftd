@@ -4,5 +4,3 @@
 download-base-url: https://raw.githubusercontent.com/fifthtry/typography/main
 
 -- fpm.dependency: fifthtry.github.io/package-doc
-
-
