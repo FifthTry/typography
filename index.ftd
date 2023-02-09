@@ -8,141 +8,169 @@
 
 -- ftd.column:
 width: fill-container
-padding-horizontal: $ph
+padding-horizontal.px: 50
+padding-horizontal.px if { ftd.device == "mobile" }: 20
 padding-bottom.px: 200
 background.solid: $inherited.colors.background.base
 
-
--- h0: Heading Hero
-
-Body text is here in h1
-
-
-
--- h1: Heading Large
-
-Body text is here in h1
-
-
-
--- h2: Heading Medium
-
-Body text is here in h2
-
-
-
--- h3: Heading Small
-
-Body text is here in h3
-
--- markdown: 
-
-This is body
-
--- end: ftd.column
-
-
-
-
-
-
-
-
-
-
--- ftd.length.responsive ph:
-desktop.px: 50
-mobile.px: 20
-
-
-
-/-- pd.package: Typography
+-- pd.package: Typography
 name: fifthtry.github.io/typography
 
-This component can be used to add heading. It has various heading namely h0, h1 and h2.Somewhat similar to heading tag in html. The variation of the numbers (0, 1 and 2) directly relates to the relevance that the content has in the interface. The lower the number, more prominence, and the importance it will have. So it helps creating the hierarchy of information.
+This component can be used to add heading. It has various heading namely h0, h1,
+h2, h3 and h4. Somewhat similar to heading tag in html. The variation of the 
+numbers (0, 1 and 2) directly relates to the relevance that the content has in 
+the interface. The lower the number, more prominence, and the importance it will 
+have. So it helps creating the hierarchy of information.
 
-
-
-/-- ft.code: Add this to your FASTN.ftd
+-- ft.code: Add this to your FASTN.ftd
 lang: ftd
 
-/-- fastn.dependency: fifthtry.github.io/typography
+\-- fastn.dependency: fifthtry.github.io/typography as tf
 
+\-- fastn.auto-import: tf
 
-/-- pd.component: h2
-name: fifthtry.github.io/typography.h2
-
-This is used to add third-level heading in hierarchy of content.
-It expects a title in caption, optional string type data in body and
-afterwards add any number of components.
-
-
-/-- pd.hidden-code: How to use
-
-/-- h2: Heading Medium
-
-/<Body text here> // This is optional
-
-/-- <other-components>:
-
-
-
-/-- pd.component: h1
-name: fifthtry.github.io/typography.h1
-
-This is used to add second-level heading in hierarchy of content i.e. the big title.
-It expects a title in caption, optional string type data in body and
-afterwards add any number of components.
-
-
-/-- pd.hidden-code: How to use
-
-/-- h1: Heading Large
-
-/<Body text here> // This is optional
-
-/-- <other-components>:
-
-
-
-/-- pd.component: h0
-name: fifthtry.github.io/typography.h0
+-- pd.component: `h0`
+name: `-- tf.h0:`
 
 This is used to add the most prominent heading i.e. the Heading Hero.
 It expects a title in caption, optional string type data in body and
 afterwards add any number of components.
 
+-- pd.hidden-code: How to use
 
-/-- pd.hidden-code: How to use
+\-- tf.h0: Title of the Heading Hero
 
-/-- h0: Heading Hero
+<Body text here> // This is optional
 
-/<Body text here> // This is optional
-
-/-- <other-components>:
-
+\-- <other-components>: you can add any component also in the body of this component.
 
 
-/-- pd.output: Basic usage example of Typography
 
-/-- h0: Heading Hero
+-- pd.component: `h1`
+name: `-- tf.h1:`
 
-Body text here in h0
+This is used to add the most prominent heading i.e. the Heading level 1.
+It expects a title in caption, optional string type data in body and
+afterwards add any number of components.
+
+-- pd.hidden-code: How to use
+
+\-- tf.h1: Title of the Heading Level 1
+
+<Body text here> // This is optional
+
+\-- <other-components>: you can add any component also in the body of this component.
 
 
-/-- h1: Heading Large
 
-Body text here in h1
+-- pd.component: `h2`
+name: `-- tf.h2:`
+
+This is used to add the most prominent heading i.e. the Heading level 2.
+It expects a title in caption, optional string type data in body and
+afterwards add any number of components.
+
+-- pd.hidden-code: How to use
+
+\-- tf.h1: Title of the Heading Level 2
+
+<Body text here> // This is optional
+
+\-- <other-components>: you can add any component also in the body of this component.
 
 
-/-- h2: Heading Medium
+-- pd.component: `h3`
+name: `-- tf.h3:`
 
-Body text here in h2
+This is used to add the most prominent heading i.e. the Heading level 3.
+It expects a title in caption, optional string type data in body and
+afterwards add any number of components.
+
+-- pd.hidden-code: How to use
+
+\-- tf.h1: Title of the Heading Level 3
+
+<Body text here> // This is optional
+
+\-- <other-components>: you can add any component also in the body of this component.
 
 
-/-- h3: Heading Small
 
-Body text here in h3
+
+-- pd.component: `h4`
+name: `-- tf.h4:`
+
+This is used to add the most prominent heading i.e. the Heading level 4.
+It expects a title in caption, optional string type data in body and
+afterwards add any number of components.
+
+-- pd.hidden-code: How to use
+
+\-- tf.h4: Title of the Heading Level 4
+
+<Body text here> // This is optional
+
+\-- <other-components>: you can add any component also in the body of this component.
+
+
+
+-- pd.component: `markdown`
+name: `-- tf.markdown:`
+
+This is used to add string type data in body text, you can add as many paragraphs
+using this component.
+
+-- pd.hidden-code: How to use
+
+\-- tf.markdown: 
+
+<Body text here> // This is optional
+
+\-- <other-components>: you can add any component also in the body of this component.
+
+
+
+-- h1: Output of all above components:
+
+Below are examples of above components, how they will be rendered on your browser.
+
+
+-- h0: Title of the Heading Hero
+
+`<Body text here>` // This is optional
+
+-- end: h0
+
+-- h1: Title of the Heading Level 1
+
+`<Body text here>` // This is optional
+
+-- end: h1
+
+-- h2: Title of the Heading Level 2
+
+`<Body text here>` // This is optional
+
+-- end: h2
+
+-- h3: Title of the Heading Level 3
+
+`<Body text here>` // This is optional
+
+-- end: h3
+
+
+-- h4: Title of the Heading Level 4
+
+`<Body text here>` // This is optional
+
+-- end: h4
+
+-- markdown: 
+
+`<Body text here>` // This is a `markdown component body area.
+
+-- end: ftd.column
 
 
 
@@ -348,6 +376,49 @@ width: fill-container
 
 
 
+-- component h4:
+caption title:
+optional body body:
+children inner:
+
+-- ftd.column:
+width: fill-container
+region: h4
+margin-top.px: 32
+margin-bottom.px: 16
+
+-- ftd.text: $h4.title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+padding-bottom.px: 16
+padding-top.px: 8
+
+-- ftd.column:
+width: fill-container
+margin-bottom.px if {$h4.body != NULL}: -26
+
+-- markdown:
+if: { h4.body != NULL }
+body: $h4.body
+
+-- ftd.column:
+children: $h4.inner
+width: fill-container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: h4
+
+
+
+
+
+
+
 
 
 
@@ -361,7 +432,14 @@ optional boolean two_columns:
 text: $markdown.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-margin-bottom.px: 24
+margin-bottom.px: 26
+
+-- ftd.text.classes:
+
+-- string: markdown
+
+-- end: ftd.text.classes
+
 
 -- end: markdown
 
