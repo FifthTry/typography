@@ -11,7 +11,9 @@ width: fill-container
 padding-horizontal.px: 50
 padding-horizontal.px if { ftd.device == "mobile" }: 20
 padding-bottom.px: 200
+padding-top.px: 24
 background.solid: $inherited.colors.background.base
+
 
 -- pd.package: Typography
 name: fifthtry.github.io/typography
