@@ -152,10 +152,10 @@ Body text here in h3
 
 
 
-
 -- component h0:
 caption title:
 optional body body:
+children inner:
 
 -- ftd.column:
 width: fill-container
@@ -178,6 +178,12 @@ margin-bottom.px if {h0.body != NULL}: -26
 if: { h0.body != NULL }
 body: $h0.body
 
+-- ftd.column:
+children: $h0.inner
+width: fill-container
+
+-- end: ftd.column
+
 -- end: ftd.column
 
 -- end: ftd.column
@@ -197,6 +203,7 @@ body: $h0.body
 -- component h1:
 caption title:
 optional body body:
+children inner:
 
 -- ftd.column:
 ;;append-at: inner -- TODO FTD 0.3
@@ -226,6 +233,12 @@ margin-bottom.px if {$h1.body != NULL}: -26
 if: { h1.body != NULL }
 body: $h1.body
 
+-- ftd.column:
+children: $h1.inner
+width: fill-container
+
+-- end: ftd.column
+
 -- end: ftd.column
 
 -- end: ftd.column
@@ -244,6 +257,7 @@ body: $h1.body
 -- component h2:
 caption title:
 optional body body:
+children inner:
 
 -- ftd.column:
 width: fill-container
@@ -267,6 +281,12 @@ margin-bottom.px if {$h2.body != NULL}: -26
 if: { h2.body != NULL }
 body: $h2.body
 
+-- ftd.column:
+children: $h2.inner
+width: fill-container
+
+-- end: ftd.column
+
 -- end: ftd.column
 
 -- end: ftd.column
@@ -285,11 +305,11 @@ body: $h2.body
 -- component h3:
 caption title:
 optional body body:
+children inner:
 
 -- ftd.column:
 width: fill-container
 region: h3
-;;append-at: inner -- TODO FTD 0.3
 margin-top.px: 32
 margin-bottom.px: 16
 
@@ -300,7 +320,6 @@ padding-bottom.px: 16
 padding-top.px: 8
 
 -- ftd.column:
-;;id: inner -- TODO FTD 0.3
 width: fill-container
 margin-bottom.px if {$h3.body != NULL}: -26
 
@@ -308,11 +327,20 @@ margin-bottom.px if {$h3.body != NULL}: -26
 if: { h3.body != NULL }
 body: $h3.body
 
+-- ftd.column:
+children: $h3.inner
+width: fill-container
+
+-- end: ftd.column
+
 -- end: ftd.column
 
 -- end: ftd.column
 
 -- end: h3
+
+
+
 
 
 
@@ -333,7 +361,7 @@ optional boolean two_columns:
 text: $markdown.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-margin-bottom.px: 26
+margin-bottom.px: 24
 
 -- end: markdown
 
