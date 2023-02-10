@@ -191,8 +191,6 @@ children inner:
 width: fill-container
 region: h1
 ;;append-at: inner -- TODO FTD 0.3
-margin-top.px: 32
-margin-bottom.px: 16
 
 -- ftd.text: $h0.title
 role: $inherited.types.heading-hero
@@ -239,8 +237,6 @@ children inner:
 ;;append-at: inner -- TODO FTD 0.3
 width: fill-container
 region: h1
-margin-top.px: 32
-margin-bottom.px: 16
 
 -- ftd.row:
 width: fill-container
@@ -293,8 +289,6 @@ children inner:
 width: fill-container
 region: h2
 ;;append-at: inner -- TODO FTD 0.3
-margin-top.px: 32
-margin-bottom.px: 16
 
 -- ftd.text: $h2.title
 role: $inherited.types.heading-medium
@@ -340,8 +334,6 @@ children inner:
 -- ftd.column:
 width: fill-container
 region: h3
-margin-top.px: 32
-margin-bottom.px: 16
 
 -- ftd.text: $h3.title
 role: $inherited.types.heading-small
@@ -386,8 +378,6 @@ children inner:
 -- ftd.column:
 width: fill-container
 region: h4
-margin-top.px: 32
-margin-bottom.px: 16
 
 -- ftd.text: $h4.title
 role: $inherited.types.heading-tiny
@@ -434,7 +424,7 @@ optional boolean two_columns:
 text: $markdown.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-margin-bottom.px: 26
+margin-bottom.px: 16
 
 -- ftd.text.classes:
 
@@ -491,7 +481,7 @@ optional body body:
 -- ftd.column:
 width: fill-container
 region: h2
-margin-top.px: 32
+margin-top.px: 0
 margin-bottom.px: 16
 ;;boolean open: true -- TODO FTD 0.3
 
