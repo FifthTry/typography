@@ -6,3 +6,9 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/typography/main
 -- fastn.dependency: fifthtry.github.io/package-doc
 
 
+
+
+-- fastn.sitemap:
+
+
+# Home: index.html
