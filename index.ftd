@@ -6,14 +6,7 @@
 
 
 
--- ftd.column:
-width: fill-container
-padding-horizontal.px: 50
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-padding-bottom.px: 200
-padding-top.px: 24
-background.solid: $inherited.colors.background.base
-
+-- ft.page: 
 
 -- pd.package: Typography
 name: fifthtry.github.io/typography
@@ -172,7 +165,7 @@ Below are examples of above components, how they will be rendered on your browse
 
 `<Body text here>` // This is a `markdown component body area.
 
--- end: ftd.column
+-- end: ft.page
 
 
 
