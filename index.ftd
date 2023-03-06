@@ -182,18 +182,17 @@ children inner:
 
 -- ftd.column:
 width: fill-container
-region: h1
-;;append-at: inner -- TODO FTD 0.3
 
 -- ftd.text: $h0.title
 role: $inherited.types.heading-hero
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
+region: h1
 
 -- ftd.column:
 width: fill-container
-margin-bottom.px if {h0.body != NULL}: -26
+margin-bottom.px if { h0.body != NULL }: -26
 
 -- markdown:
 if: { h0.body != NULL }
@@ -227,26 +226,18 @@ optional body body:
 children inner:
 
 -- ftd.column:
-;;append-at: inner -- TODO FTD 0.3
 width: fill-container
-region: h1
-
--- ftd.row:
-width: fill-container
-spacing.fixed.px: 20
 
 -- ftd.text: $h1.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
-
--- end: ftd.row
+region: h1
 
 -- ftd.column:
-;;id: inner -- TODO FTD 0.3
 width: fill-container
-margin-bottom.px if {$h1.body != NULL}: -26
+margin-bottom.px if { h1.body != NULL }: -26
 
 -- markdown:
 if: { h1.body != NULL }
@@ -280,19 +271,17 @@ children inner:
 
 -- ftd.column:
 width: fill-container
-region: h2
-;;append-at: inner -- TODO FTD 0.3
 
 -- ftd.text: $h2.title
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
+region: h2
 
 -- ftd.column:
-;;id: inner -- TODO FTD 0.3
 width: fill-container
-margin-bottom.px if {$h2.body != NULL}: -26
+margin-bottom.px if { h2.body != NULL }: -26
 
 -- markdown:
 if: { h2.body != NULL }
@@ -326,17 +315,17 @@ children inner:
 
 -- ftd.column:
 width: fill-container
-region: h3
 
 -- ftd.text: $h3.title
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
+region: h3
 
 -- ftd.column:
 width: fill-container
-margin-bottom.px if {$h3.body != NULL}: -26
+margin-bottom.px if { h3.body != NULL }: -26
 
 -- markdown:
 if: { h3.body != NULL }
@@ -370,17 +359,17 @@ children inner:
 
 -- ftd.column:
 width: fill-container
-region: h4
 
 -- ftd.text: $h4.title
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text-strong
 padding-bottom.px: 16
 padding-top.px: 8
+region: h4
 
 -- ftd.column:
 width: fill-container
-margin-bottom.px if {$h4.body != NULL}: -26
+margin-bottom.px if { h4.body != NULL }: -26
 
 -- markdown:
 if: { h4.body != NULL }
@@ -473,7 +462,6 @@ optional body body:
 
 -- ftd.column:
 width: fill-container
-region: h2
 margin-top.px: 0
 margin-bottom.px: 16
 ;;boolean open: true -- TODO FTD 0.3
@@ -484,6 +472,7 @@ role: $inherited.types.heading-small
 color: $inherited.colors.text
 padding-bottom.px: 8
 padding-top.px: 16
+region: h2
 ;;$on-click$: toggle $open -- TODO FTD 0.3
 
 -- end: ftd.column
