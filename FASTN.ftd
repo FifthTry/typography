@@ -1,7 +1,6 @@
 -- import: fastn
 
 -- fastn.package: fifthtry.github.io/typography
-download-base-url: https://raw.githubusercontent.com/fifthtry/typography/main
 
 -- fastn.dependency: fifthtry.github.io/package-doc
 
