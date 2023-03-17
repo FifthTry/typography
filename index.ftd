@@ -190,10 +190,6 @@ padding-bottom.px: 16
 padding-top.px: 8
 region: h1
 
--- ftd.column:
-width: fill-container
-margin-bottom.px if { h0.body != NULL }: -26
-
 -- markdown:
 if: { h0.body != NULL }
 body: $h0.body
@@ -201,8 +197,6 @@ body: $h0.body
 -- ftd.column:
 children: $h0.inner
 width: fill-container
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -235,10 +229,6 @@ padding-bottom.px: 16
 padding-top.px: 8
 region: h1
 
--- ftd.column:
-width: fill-container
-margin-bottom.px if { h1.body != NULL }: -26
-
 -- markdown:
 if: { h1.body != NULL }
 body: $h1.body
@@ -246,8 +236,6 @@ body: $h1.body
 -- ftd.column:
 children: $h1.inner
 width: fill-container
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -279,10 +267,6 @@ padding-bottom.px: 16
 padding-top.px: 8
 region: h2
 
--- ftd.column:
-width: fill-container
-margin-bottom.px if { h2.body != NULL }: -26
-
 -- markdown:
 if: { h2.body != NULL }
 body: $h2.body
@@ -290,8 +274,6 @@ body: $h2.body
 -- ftd.column:
 children: $h2.inner
 width: fill-container
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -323,10 +305,6 @@ padding-bottom.px: 16
 padding-top.px: 8
 region: h3
 
--- ftd.column:
-width: fill-container
-margin-bottom.px if { h3.body != NULL }: -26
-
 -- markdown:
 if: { h3.body != NULL }
 body: $h3.body
@@ -334,8 +312,6 @@ body: $h3.body
 -- ftd.column:
 children: $h3.inner
 width: fill-container
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -367,10 +343,6 @@ padding-bottom.px: 16
 padding-top.px: 8
 region: h4
 
--- ftd.column:
-width: fill-container
-margin-bottom.px if { h4.body != NULL }: -26
-
 -- markdown:
 if: { h4.body != NULL }
 body: $h4.body
@@ -378,8 +350,6 @@ body: $h4.body
 -- ftd.column:
 children: $h4.inner
 width: fill-container
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -406,13 +376,7 @@ optional boolean two_columns:
 text: $markdown.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-
--- ftd.text.classes:
-
--- string: markdown
-
--- end: ftd.text.classes
-
+classes: markdown
 
 -- end: markdown
 
