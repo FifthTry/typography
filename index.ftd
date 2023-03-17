@@ -186,8 +186,7 @@ width: fill-container
 -- ftd.text: $h0.title
 role: $inherited.types.heading-hero
 color: $inherited.colors.text-strong
-padding-bottom.px: 16
-padding-top.px: 8
+padding-bottom.px: 8
 region: h1
 
 -- markdown:
@@ -225,8 +224,8 @@ width: fill-container
 -- ftd.text: $h1.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
-padding-bottom.px: 16
-padding-top.px: 8
+padding-bottom.px: 8
+padding-top.em: 0.5
 region: h1
 
 -- markdown:
@@ -263,8 +262,8 @@ width: fill-container
 -- ftd.text: $h2.title
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
-padding-bottom.px: 16
-padding-top.px: 8
+padding-bottom.px: 8
+padding-top.em: 0.3
 region: h2
 
 -- markdown:
@@ -301,8 +300,8 @@ width: fill-container
 -- ftd.text: $h3.title
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
-padding-bottom.px: 16
-padding-top.px: 8
+padding-bottom.px: 8
+padding-top.em: 0.17
 region: h3
 
 -- markdown:
@@ -339,8 +338,8 @@ width: fill-container
 -- ftd.text: $h4.title
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text-strong
-padding-bottom.px: 16
-padding-top.px: 8
+padding-bottom.px: 8
+padding-top.em: 0.08
 region: h4
 
 -- markdown:
@@ -434,9 +433,8 @@ text: $h2-text.title
 role: $inherited.types.heading-small
 color: $inherited.colors.text
 padding-bottom.px: 8
-padding-top.px: 16
+padding-top.em: 0.3
 region: h2
-;;$on-click$: toggle $open -- TODO FTD 0.3
 
 -- end: ftd.column
 
