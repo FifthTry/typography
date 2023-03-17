@@ -406,7 +406,6 @@ optional boolean two_columns:
 text: $markdown.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-margin-bottom.px: 16
 
 -- ftd.text.classes:
 
