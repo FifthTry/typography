@@ -186,7 +186,10 @@ width: fill-container
 -- ftd.text: $h0.title
 role: $inherited.types.heading-hero
 color: $inherited.colors.text-strong
-padding-bottom.px: 8
+margin-bottom.rem: 0.5
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
 region: h1
 
 -- markdown:
@@ -224,7 +227,10 @@ width: fill-container
 -- ftd.text: $h1.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
-padding-bottom.px: 8
+margin-bottom.rem: 0.5
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
 padding-top.em: 0.5
 region: h1
 
@@ -262,7 +268,8 @@ width: fill-container
 -- ftd.text: $h2.title
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
-padding-bottom.px: 8
+margin-bottom.rem: 0.5
+width: fill-container
 padding-top.em: 0.3
 region: h2
 
@@ -300,7 +307,8 @@ width: fill-container
 -- ftd.text: $h3.title
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
-padding-bottom.px: 8
+margin-bottom.rem: 0.5
+width: fill-container
 padding-top.em: 0.17
 region: h3
 
@@ -338,7 +346,8 @@ width: fill-container
 -- ftd.text: $h4.title
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text-strong
-padding-bottom.px: 8
+margin-bottom.rem: 0.5
+width: fill-container
 padding-top.em: 0.08
 region: h4
 
@@ -432,7 +441,8 @@ margin-bottom.px: 16
 text: $h2-text.title
 role: $inherited.types.heading-small
 color: $inherited.colors.text
-padding-bottom.px: 8
+margin-bottom.rem: 0.5
+width: fill-container
 padding-top.em: 0.3
 region: h2
 
