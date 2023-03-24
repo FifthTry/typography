@@ -1,12 +1,21 @@
 -- import: fastn
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
+-- import: fifthtry.github.io/package-doc/footer
 
 
 
 
+-- ft.page:
+show-footer: true
+site-name: Typography
 
--- ft.page: 
+-- ft.page.footer:
+
+-- footer.fastn-footer:
+
+-- end: ft.page.footer
+
 
 -- pd.package: Typography
 name: fifthtry.github.io/typography
