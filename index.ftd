@@ -229,8 +229,10 @@ width: fill-container
 caption title:
 optional body body:
 children inner:
+optional string id:
 
 -- ftd.column:
+id: $h1.id
 width: fill-container
 
 -- ftd.text: $h1.title
@@ -270,8 +272,10 @@ width: fill-container
 caption title:
 optional body body:
 children inner:
+optional string id:
 
 -- ftd.column:
+id: $h2.id
 width: fill-container
 
 -- ftd.text: $h2.title
@@ -309,8 +313,10 @@ width: fill-container
 caption title:
 optional body body:
 children inner:
+optional string id:
 
 -- ftd.column:
+id: $h3.id
 width: fill-container
 
 -- ftd.text: $h3.title
@@ -348,8 +354,10 @@ width: fill-container
 caption title:
 optional body body:
 children inner:
+optional string id:
 
 -- ftd.column:
+id: $h4.id
 width: fill-container
 
 -- ftd.text: $h4.title
