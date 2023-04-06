@@ -232,7 +232,7 @@ children inner:
 optional string id:
 
 -- ftd.column:
-id if { h1.id != NULL }: $h1.id
+id: $h1.id
 width: fill-container
 
 -- ftd.text: $h1.title
@@ -275,7 +275,7 @@ children inner:
 optional string id:
 
 -- ftd.column:
-id if { h2.id != NULL }: $h2.id
+id: $h2.id
 width: fill-container
 
 -- ftd.text: $h2.title
@@ -316,7 +316,7 @@ children inner:
 optional string id:
 
 -- ftd.column:
-id if { h3.id != NULL }: $h3.id
+id: $h3.id
 width: fill-container
 
 -- ftd.text: $h3.title
@@ -357,7 +357,7 @@ children inner:
 optional string id:
 
 -- ftd.column:
-id if { h4.id != NULL }: $h4.id
+id: $h4.id
 width: fill-container
 
 -- ftd.text: $h4.title
